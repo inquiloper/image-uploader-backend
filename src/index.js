@@ -3,7 +3,7 @@ import cors from 'cors';
 import multer from 'multer';
 import path from 'path';
 
-const PORT = process.env.SERVER_PORT;
+const PORT = process.env.PORT || process.env.SERVER_PORT;
 const UPLOAD_DIR = "public/uploads/";
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {

@@ -6,14 +6,17 @@
   "scripts": {
     "start": "node src/index.js",
     "start:dev": "nodemon --exec babel-node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build"
   },
   "author": "inquiloper",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.5",
+    "babel-core": "^7.0.0-bridge.0",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
